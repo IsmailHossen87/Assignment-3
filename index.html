@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand House</title>
+    <!-- font family link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- daisy ui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind css configaretion -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                gray_color:'#737373',
+                primary_color:'#ABEF5F',
+              },
+              fontFamily: {
+                manrope:'Manrope',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="font-manrope">
+  <header class="container mx-auto">
+    <!-- navbar section  -->
+     <nav>
+        <div class="navbar bg-base-100">
+            <div class="navbar-start sm:px-1">
+              <i class="fa-solid fa-arrow-right -rotate-45 md:p-2 p-1 rounded-full bg-[#ABEF5F]"></i>
+              <a  class=" font-bold md:text-3xl  text-xs p-1 md:p-3 md:text-3xl">Rinterio</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li class="font-bold text-[#494949]"><a>Home</a></li>
+                <li class="text-gray_color"><a>Services</a></li>
+                <li class="text-gray_color"><a>Portfolio</a></li>
+                <li class="text-gray_color"><a>Blogs</a></li>
+                <li class="text-gray_color"><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+                <div class="md:space-x-3 space-x-1 md:mr-3 flex hidden md:block">
+                    <i class="fa-solid bg-[#E9E9E9] p-2 rounded-full text-gray_color fa-magnifying-glass"></i>
+                    <i class="fa-solid bg-[#E9E9E9] p-2 rounded-full text-gray_color  fa-cart-shopping "></i>
+                </div>
+              <a class="btn rounded-full px-3 bg-primary_color hidden md:block py-2">Book Consult <i class="fa-solid text-white fa-arrow-right -rotate-45 p-2 rounded-full bg-black"></i></a>
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 right-0 rounded-box z-[1] mt-3 md:w-40 w-20 p-2 shadow">
+                  <li><a>Item 1</a></li>
+                  <li><a>Item 3</a></li>
+                  <li><a>Item 3</a></li> 
+                </ul>
+              </div>
+            </div>
+            
+          </div>
+     </nav>
+  </header> 
+  <main></main> 
+</body>
+</html>
