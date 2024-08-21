@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,79 +10,219 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- daisy ui link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- tailwind css configaretion -->
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                gray_color:'#737373',
-                primary_color:'#ABEF5F',
-              },
-              fontFamily: {
-                manrope:'Manrope',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        gray_color: '#737373',
+                        primary_color: '#ABEF5F',
+                    },
+                    fontFamily: {
+                        manrope: 'Manrope',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 </head>
-<body class="font-manrope">
-  <header class="container mx-auto">
-    <!-- navbar section  -->
-     <nav>
-        <div class="navbar bg-base-100">
-            <div class="navbar-start sm:px-1">
-              <i class="fa-solid fa-arrow-right -rotate-45 md:p-2 p-1 rounded-full bg-[#ABEF5F]"></i>
-              <a  class=" font-bold md:text-3xl  text-xs p-1 md:p-3 md:text-3xl">Rinterio</a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li class="font-bold text-[#494949]"><a>Home</a></li>
-                <li class="text-gray_color"><a>Services</a></li>
-                <li class="text-gray_color"><a>Portfolio</a></li>
-                <li class="text-gray_color"><a>Blogs</a></li>
-                <li class="text-gray_color"><a>Contact Us</a></li>
-              </ul>
-            </div>
-            <div class="navbar-end">
-                <div class="md:space-x-3 space-x-1 md:mr-3 flex hidden md:block">
-                    <i class="fa-solid bg-[#E9E9E9] p-2 rounded-full text-gray_color fa-magnifying-glass"></i>
-                    <i class="fa-solid bg-[#E9E9E9] p-2 rounded-full text-gray_color  fa-cart-shopping "></i>
+
+<body class="font-manrope ">
+    <header class="container mx-auto">
+        <!-- navbar section  -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start sm:px-1">
+                    <i class="fa-solid fa-arrow-right -rotate-45 md:p-2 p-1 rounded-full bg-[#ABEF5F]"></i>
+                    <a class=" font-bold md:text-3xl  text-xs p-1 md:p-3 md:text-3xl">Rinterio</a>
                 </div>
-              <a class="btn rounded-full px-3 bg-primary_color hidden md:block py-2">Book Consult <i class="fa-solid text-white fa-arrow-right -rotate-45 p-2 rounded-full bg-black"></i></a>
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h8m-8 6h16" />
-                  </svg>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li class="font-bold text-[#494949]"><a>Home</a></li>
+                        <li class="text-gray_color"><a>Services</a></li>
+                        <li class="text-gray_color"><a>Portfolio</a></li>
+                        <li class="text-gray_color"><a>Blogs</a></li>
+                        <li class="text-gray_color"><a>Contact Us</a></li>
+                    </ul>
                 </div>
-                <ul
-                  tabindex="0"
-                  class="menu menu-sm dropdown-content bg-base-100 right-0 rounded-box z-[1] mt-3 md:w-40 w-20 p-2 shadow">
-                  <li><a>Item 1</a></li>
-                  <li><a>Item 3</a></li>
-                  <li><a>Item 3</a></li> 
-                </ul>
-              </div>
+                <div class="navbar-end">
+                    <div class="md:space-x-3 space-x-1 md:mr-3 flex hidden md:block">
+                        <i class="fa-solid bg-[#E9E9E9] p-2 rounded-full text-gray_color fa-magnifying-glass"></i>
+                        <i class="fa-solid bg-[#E9E9E9] p-2 rounded-full text-gray_color  fa-cart-shopping "></i>
+                    </div>
+                    <a class="btn rounded-full px-4 bg-primary_color hidden md:block font-bold text-lg py-2">Book
+                        Consult <i
+                            class="fa-solid text-white fa-arrow-right -rotate-45 p-2 rounded-full bg-black"></i></a>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 right-0 rounded-box z-[1] mt-3 md:w-40 w-20 p-2 shadow">
+                            <li><a>Item 1</a></li>
+                            <li><a>Item 3</a></li>
+                            <li><a>Item 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
-            
-          </div>
-     </nav>
-  </header> 
-  <main></main> 
+        </nav>
+    </header>
+    <main>
+        <!-- banner  section  -->
+        <div class="mt-4 md:mt-8 container mx-auto">
+            <div class="flex justify-center px-4">
+                <img src="assets/banner.png" alt="">
+            </div>
+            <!-- text container -->
+            <div class="text-center space-y-3 px-4 md:w-11/12  mx-auto">
+                <h3 class="text-2xl md:text-6xl font-bold">A barn house of this design has a striking appearance</h3>
+                <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+                    weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+            </div>
+            <div class="mt-4 text-center px-2">
+                <a class="btn w-full md:w-[206px] m-auto rounded-full px-4 bg-[#acef5f83] font-bold text-lg py-2">View
+                    Details<i
+                        class="fa-solid text-white fa-arrow-right -rotate-45 p-2 rounded-full bg-primary_color"></i></a>
+            </div>
+        </div>
+        <!-- container number 2 -->
+        <div class=" bg-gray-100 pt-5 lg:pt-20 mt-6">
+            <!-- container 2 parent div -->
+            <div class="lg:flex  max-w-5xl mx-auto">
+                <!-- text container -->
+                <div class="relative space-y-4 text-center lg:text-start px-3 lg:w-5/6">
+                    <div class="absolute hidden lg:block border border-dashed -top-14 -left-2"><img class=" rotate-[5deg] p-4"
+                            src="assets/Vector.png" alt=""></div>
+                    <button class="btn bg-[#FFFFFF] py-1  px-4 font-bold rouded-full"> <i class="fa-solid fa-arrow-right"></i>About
+                        Us</button>
+                    <h3 class="text-2xl md:text-4xl font-bold">We design thoughtful, liveable spaces</h3>
+                    <p class="text-[#494949]">The barn house captivates with its blend of rustic charm and
+                        modern sophistication, featuring weathered wood, sleek metal accents.</p>
+
+                    <!-- card  -->
+                     <div class="md:flex gap-3 ">
+                        <div class="flex mb-4 bg-red-400 p-5 w-full items-center justify-center md:w-3/5 rounded-lg">
+                            <div> <img src="assets/commercial.png" alt=""></div>
+                            <div class="ml-3">
+                                <h3 class="text-lg font-bold">Commercial</h3>
+                                <p class="text-gray_color">The barn house captivates with its blend of rustic charm and modern.</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-4 bg-red-400 p-5 w-full items-center justify-center md:w-3/5 rounded-lg">
+                            <div> <img src="assets/residential.png" alt=""></div>
+                            <div class="ml-3">
+                                <h3 class="text-lg font-bold">Residential</h3>
+                                <p class="text-gray_color">The barn house captivates with its blend of rustic charm and modern.</p>
+                            </div>
+                        </div>
+                        </div>
+                </div>
+                <!-- image container -->
+                <div class="flex items-center px-3 md:h-4/5 lg:h-full">
+                    <img class="md:w-full " src="assets/Rectangle.png" alt="">
+                </div>
+            </div>
+            <!-- container 3 section -->
+            <div class="container mx-auto lg:mt-20">
+                <div class="bg-[#FFFFFF] w-11/12 lg:w-full mx-auto mt-4 rounded-lg">
+                    <!-- inner card parent  -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6  py-8">
+                        <!-- inner card 1 -->
+                        <div class="text-center flex m-4 flex-col">
+                            <i class="fa-solid fa-envelope"></i>
+                            <h3 class="text-4xl font-bold">307+</h3>
+                            <p class="text-gray-color">Staff Members</p>
+                         </div>
+                         
+                         <!-- inner card 2 -->
+                         <div class="text-center flex m-4 flex-col">
+                            <i class="fa-solid fa-envelope"></i>
+                            <h3 class="text-4xl font-bold">307+</h3>
+                            <p class="text-gray-color">Staff Members</p>
+                         </div>
+                         <!-- inner card 2 -->
+                         <div class="text-center flex m-4 flex-col">
+                            <i class="fa-solid fa-envelope"></i>
+                            <h3 class="text-4xl font-bold">307+</h3>
+                            <p class="text-gray-color">Staff Members</p>
+                         </div>
+                         <!-- inner card 2 -->
+                         <div class="text-center flex m-4 flex-col">
+                            <i class="fa-solid fa-envelope"></i>
+                            <h3 class="text-4xl font-bold">307+</h3>
+                            <p class="text-gray-color">Staff Members</p>
+                         </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- container 4 -->
+             <div class="  lg:mt-20 mt-5 p-5">
+                <div class="text-center space-y-4">
+                    <button class="btn bg-[#FFFFFF] py-1 rounded-2xl w-full  px-4 lg:w-5/12 font-bold rouded-full"> <i class="fa-solid fa-arrow-right"></i>How are Works</button>
+                        <h3 class="text-lg font-bold">Our Works Process</h3>
+                        <p class="text-gray_color md:w-4/5 mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                    <div class="gap-2 gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                        <!-- card 1 -->
+                        <div class="bg-[#E7C1D3] flex items-center justify-center space-y-3 rounded-xl lg:px-0 px-2 py-6">
+                            <div class="text-start flex flex-col justify-center px-5 ">
+                             <i class="fa-solid fa-user"></i>
+                              <h2 class="font-bold text-lg">Concept </h2>
+                              <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                            </div>
+                          </div>
+                           <!-- card 1 -->
+                           <div class="bg-[#A4DAC3] flex items-center justify-center lg:px-0 space-y-3 rounded-xl px-2 py-6">
+                            <div class="text-start flex flex-col justify-center px-5 ">
+                             <i class="fa-solid fa-user"></i>
+                              <h2 class="font-bold text-lg">Concept </h2>
+                              <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                            </div>
+                          </div>
+                           <!-- card 1 -->
+                           <div class="bg-[#EFDA6E] flex items-center justify-center lg:px-0 space-y-3 rounded-xl px-2 py-6">
+                            <div class="text-start flex flex-col justify-center px-5 ">
+                             <i class="fa-solid fa-user"></i>
+                              <h2 class="font-bold text-lg">Concept </h2>
+                              <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                            </div>
+                          </div>
+                           <!-- card 1 -->
+                           <div class="bg-[#77AAEA] flex items-center lg:px-0 justify-center space-y-3 rounded-xl px-2 py-6">
+                            <div class="text-start flex flex-col justify-center px-5 ">
+                             <i class="fa-solid fa-user"></i>
+                              <h2 class="font-bold text-lg">Concept </h2>
+                              <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+        <div class="container mx-auto">
+                <!-- container 5 -->
+                <div class="lg:mt-20 mt-10 text-center space-y-3 p-5">
+                    <a class="btn w-9/12 md:w-[206px] m-auto rounded-full px-4 bg-[#acef5f83] font-bold text-lg py-2">View
+                        Details<i
+                            class="fa-solid text-white fa-arrow-right -rotate-45 p-2 rounded-full bg-primary_color"></i></a>
+                        <h3 class="text-lg font-bold">Our Works Process</h3>
+                        <p class="text-gray_color md:w-4/5 mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                  </div>
+        </div>
+    </main>
 </body>
+
 </html>
